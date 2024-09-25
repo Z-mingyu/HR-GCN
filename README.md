@@ -1,7 +1,7 @@
 # 2D-3D Whole-body Pose Estimation for Robot Teleoperation via High-Resolution Graph Convolutional Network
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FZ-mingyu%2FGraphHRNet&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=Pytorch&logoColor=white"/></a>
-<p align="center"><img src="fig2.pdf" width="100%" alt="" /></p>
+<p align="center"><img src="img.png" width="100%" alt="" /></p>
 
 ![Demo](demo.gif)
 This repository contains the pytorch implementation of the approach described in the paper:
