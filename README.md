@@ -1,9 +1,9 @@
 # 2D-3D Whole-body Pose Estimation for Robot Teleoperation via High-Resolution Graph Convolutional Network
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FZ-mingyu%2FGraphHRNet&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=Pytorch&logoColor=white"/></a>
-<p align="center"><img src="img.png" width="100%" alt="" /></p>
+<p align="center"><img src="fig2.pdf" width="100%" alt="" /></p>
 
-
+![Demo](demo.gif)
 This repository contains the pytorch implementation of the approach described in the paper:
 > Mingyu Zhang,Yuanchuan Lai ,Yang Zhang ,Qing Gao. 
 [2D-3D Whole-body Pose Estimation for Robot Teleoperation via High-Resolution Graph Convolutional Network](https://github.com/Z-mingyu/HR-GCN.git)
@@ -34,38 +34,38 @@ pip install -r requirements.txt
 
 ### Evaluation 
 ```
-python HRNet_GCN_WB.py --gcn {gcn_name}  --evaluate checkpoint/{weight_name}.pth.tar -cfg checkpoint/w32_adam_lr1e-3.yaml
+python HRNet_GCN_WB.py --model 1/2/3/4/5 --gcn {gcn_name}  --evaluate checkpoint/{weight_name}.pth.tar -cfg checkpoint/w32_adam_lr1e-3.yaml
 ```
 
 ### Training
 ```
 # Decoupled Vanilla GCN (What method used in paper)
-python HRNet_GCN_WB.py --gcn dc_vanilla --model 1/2/3/4
+python HRNet_GCN_WB.py --gcn dc_vanilla --model 1/2/3/4/5
 
 # Decoupled Pre-Aggresive GCN (What method used in paper)
-python HRNet_GCN_WB.py --gcn dc_preagg --model 1/2/3/4
+python HRNet_GCN_WB.py --gcn dc_preagg --model 1/2/3/4/5
 
 # Semantic GCN (What method used in paper)
-python HRNet_GCN_WB.py --gcn semantic --model 1/2/3/4
+python HRNet_GCN_WB.py --gcn semantic --model 1/2/3/4/5
 
 # Decoupled Post-Aggresive GCN
-python HRNet_GCN_WB.py --gcn dc_postagg --model 1/2/3/4
+python HRNet_GCN_WB.py --gcn dc_postagg --model 1/2/3/4/5
 
 # Convolution-style GCN
-python HRNet_GCN_WB.py --gcn convst --model 1/2/3/4
+python HRNet_GCN_WB.py --gcn convst --model 1/2/3/4/5
 
 # No-sharing GCN
-python HRNet_GCN_WB.py --gcn nosharing --model 1/2/3/4
+python HRNet_GCN_WB.py --gcn nosharing --model 1/2/3/4/5
 
 # Modulated GCN
-python HRNet_GCN_WB.py --gcn modulated --model 1/2/3/4
+python HRNet_GCN_WB.py --gcn modulated --model 1/2/3/4/5
 ```
-model 1/2/3/4 for HRGCN/GraphRes/HRGCN*/GraphSH
+model 1/2/3/4/5 for HRGCN/GraphResNet/HRGCN*/GraphSH/GraphResNet†
 
 ### Pre-trained weight
 The best checkpoint has been uploaded with  hyper-parameters and configuration file
 
-[Download Link.](https://drive.google.com/file/d/1FQpAnNyycKXgqlJ7vitFgP7KDwD365sQ/view?usp=sharing)
+[Download Link.](https://drive.google.com/file/d/17-g50KSndfzAbFfr9-uFZEQqP2xypAqm/view?usp=drive_link)
 
 
 ### Acknowledgement
